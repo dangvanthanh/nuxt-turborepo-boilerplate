@@ -1,25 +1,16 @@
-# Turborepo starter
+# Nuxt Turborepo Boilerplate
 
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+> Starter template or boilerplate using Nuxt, Turborepo and Vite
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This turborepo uses [pnpm](https://pnpm.io/) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub Vue component library shared by both `web` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `web`: Nuxt app
+- `@repo/biome-confi`: Biome config for the repo
+- `@repo/typescript-config`: TypeScript config for the repo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -28,7 +19,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [Biome](https://eslint.org/) for code linting and formatting
+- [Biome](https://biomejs.dev/) for code linting and formatting
 
 ### Build
 
@@ -77,3 +68,7 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+## License
+
+MIT © [Dang Van Thanh](https://dangthanh.org)
