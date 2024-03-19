@@ -9,7 +9,7 @@ This turborepo uses [pnpm](https://pnpm.io/) as a package manager. It includes t
 ### Apps and Packages
 
 - `web`: Nuxt app
-- `@repo/biome-confi`: Biome config for the repo
+- `@repo/biome-config`: Biome config for the repo
 - `@repo/typescript-config`: TypeScript config for the repo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
