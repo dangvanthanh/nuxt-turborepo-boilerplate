@@ -20,6 +20,7 @@ This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [Biome](https://biomejs.dev/) for code linting and formatting
+- [Vue Email](https://vuemail.net/) for generation of writing emails
 
 ### Build
 
