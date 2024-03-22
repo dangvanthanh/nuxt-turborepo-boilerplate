@@ -8,8 +8,9 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"lint": "pnpm dlx @biomejs/biome check ./server --apply",
-		"format": "pnpm dlx @biomejs/biome format ./server --write"
+		"lint": "pnpm dlx @biomejs/biome check ./ --apply",
+		"format": "pnpm dlx @biomejs/biome format ./ --write",
+		"update": "pnpm dlx npm-check-updates -ui"
 	},
 	"dependencies": {
 		"@vue-email/nuxt": "^0.8.19",
@@ -19,6 +20,6 @@
 		"vue-router": "^4.3.0"
 	},
 	"devDependencies": {
-    "@repo/biome-config": "workspace:*"
+		"@repo/biome-config": "workspace:*"
 	}
 }

@@ -1,3 +1,6 @@
 {
-	"extends": ["@repo/biome-config/biome"]
+	"extends": ["@repo/biome-config/biome"],
+	"files": {
+		"ignore": ["./.nuxt/**", "./.output/**", "./.turbo/**"]
+	}
 }
