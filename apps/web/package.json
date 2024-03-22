@@ -19,6 +19,6 @@
 		"vue-router": "^4.3.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.6.1"
+    "@repo/biome-config": "workspace:*"
 	}
 }

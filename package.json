@@ -9,7 +9,6 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.6.1",
     "@repo/biome-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "husky": "^9.0.11",
