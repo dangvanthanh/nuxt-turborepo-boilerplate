@@ -5,4 +5,11 @@ export default defineNuxtConfig({
 	vueEmail: {
 		autoImport: true,
 	},
+	nitro: {
+		esbuild: {
+			options: {
+				target: 'esnext',
+			},
+		},
+	},
 })
