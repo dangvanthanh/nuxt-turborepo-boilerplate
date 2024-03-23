@@ -7,8 +7,8 @@ export default defineEventHandler(async () => {
 	try {
 		const template = await useCompiler('Welcome.vue')
 		const options = {
-			from: 'Acme <onboarding@resend.dev>',
-			to: ['chieuhue@gmail.com'],
+			from: 'Your <contact@yoursite.com>',
+			to: [''],
 			subject: 'Hello world',
 			html: template.html,
 		}
