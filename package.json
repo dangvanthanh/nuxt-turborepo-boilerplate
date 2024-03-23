@@ -20,6 +20,6 @@
 		"node": ">=18"
 	},
 	"lint-staged": {
-		"*.{js,ts}": ["pnpm run lint", "pnpm run format"]
+		"*.{js,ts,vue}": ["pnpm run lint", "pnpm run format"]
 	}
 }
