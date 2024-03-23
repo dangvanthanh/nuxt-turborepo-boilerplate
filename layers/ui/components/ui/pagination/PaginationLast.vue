@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
-import { PaginationLast, type PaginationLastProps } from 'radix-vue'
-import { ChevronsRight } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { ChevronsRight } from 'lucide-vue-next'
+import { PaginationLast, type PaginationLastProps } from 'radix-vue'
+import { type HTMLAttributes, computed } from 'vue'
 
 const props = withDefaults(
 	defineProps<PaginationLastProps & { class?: HTMLAttributes['class'] }>(),
