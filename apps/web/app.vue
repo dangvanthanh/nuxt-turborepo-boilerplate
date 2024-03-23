@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Nuxt Turborepo Boilerplate',
+	title: 'Nuxt Turborepo Boilerplate',
 })
 </script>
 

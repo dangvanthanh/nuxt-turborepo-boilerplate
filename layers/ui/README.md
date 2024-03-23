@@ -1,4 +1,4 @@
-# Nuxt Layer Starter
+# UI Layer Starter
 
 Create Nuxt extendable layer with this GitHub template.
 
@@ -31,14 +31,14 @@ npm publish --access public
 Once done, your users will only have to run:
 
 ```bash
-npm install --save your-theme
+npm install --save @repo/ui
 ```
 
 Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
 defineNuxtConfig({
-  extends: 'your-theme'
+  extends: '@repo/ui'
 })
 ```
 
