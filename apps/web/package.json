@@ -13,6 +13,7 @@
 		"update": "pnpm dlx npm-check-updates -ui"
 	},
 	"dependencies": {
+		"@repo/ui": "workspace:*",
 		"@vue-email/nuxt": "^0.8.19",
 		"nuxt": "^3.11.1",
 		"resend": "^3.2.0",

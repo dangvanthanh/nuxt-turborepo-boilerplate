@@ -1,8 +1,5 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="container mx-auto py-8">
+    <Welcome />
   </div>
 </template>

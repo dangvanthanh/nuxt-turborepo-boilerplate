@@ -1,0 +1,41 @@
+{
+	"name": "@repo/ui",
+	"type": "module",
+	"version": "0.0.1",
+	"main": "./nuxt.config.ts",
+	"scripts": {
+		"shadcn:init": "pnpm dlx shadcn-vue@latest init",
+		"shadcn:add": "pnpm dlx shadcn-vue@latest add",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "pnpm dlx @biomejs/biome check ./ --apply",
+		"format": "pnpm dlx @biomejs/biome format ./ --write",
+		"update": "pnpm dlx npm-check-updates -ui"
+	},
+	"devDependencies": {
+		"@nuxtjs/tailwindcss": "^6.11.4",
+		"@repo/biome-config": "workspace:*",
+		"nuxt": "^3.11.1",
+		"shadcn-nuxt": "^0.10.2",
+		"typescript": "^5.4.3"
+	},
+	"dependencies": {
+		"@vee-validate/zod": "^4.12.6",
+		"@vueuse/core": "^10.9.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.0",
+		"embla-carousel": "^8.0.0",
+		"embla-carousel-vue": "^8.0.0",
+		"lucide-vue-next": "^0.363.0",
+		"radix-vue": "^1.5.3",
+		"tailwind-merge": "^2.2.2",
+		"tailwindcss-animate": "^1.0.7",
+		"v-calendar": "^3.1.2",
+		"vaul-vue": "^0.1.0",
+		"vee-validate": "^4.12.6",
+		"vue-sonner": "^1.1.2",
+		"zod": "^3.22.4"
+	}
+}

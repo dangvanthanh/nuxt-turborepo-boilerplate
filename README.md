@@ -6,9 +6,10 @@
 
 This turborepo uses [pnpm](https://pnpm.io/) as a package manager. It includes the following packages/apps:
 
-### Apps and Packages
+### Apps, Layers and Packages
 
 - `web`: Nuxt app
+- `ui`: Nuxt layer for shared ui
 - `@repo/biome-config`: Biome config for the repo
 - `@repo/typescript-config`: TypeScript config for the repo
 
@@ -20,6 +21,7 @@ This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [Biome](https://biomejs.dev/) for code linting and formatting
+- [Shadcn-vue](https://www.shadcn-vue.com) - Beautifully designed components
 - [Vue Email](https://vuemail.net/) for generation of writing emails
 
 ### Build

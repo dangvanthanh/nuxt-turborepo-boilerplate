@@ -1,0 +1,18 @@
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+	devtools: { enabled: true },
+	modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+	shadcn: {
+		prefix: 'Ui',
+		componentDir: './components/ui',
+	},
+	css: [resolve('./assets/css/tailwind.css')],
+	alias: {
+		'@': resolve('./'),
+		'~': resolve('./'),
+	},
+})
