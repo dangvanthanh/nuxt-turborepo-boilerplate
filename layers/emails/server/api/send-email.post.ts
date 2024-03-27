@@ -1,15 +1,15 @@
 import { Resend } from 'resend'
 import { useCompiler } from '#vue-email'
 
-const resend = new Resend(process.env.NUXT_RESEND_API_KEY)
+const resend = new Resend(process.env.NUXT_RESEND_API_KEY || 're_123')
 
 export default defineEventHandler(async () => {
 	try {
 		const template = await useCompiler('Welcome.vue')
 		const options = {
-			from: 'Your <contact@yoursite.com>',
+			from: 'Acme <onboarding@resend.dev>',
 			to: [''],
-			subject: 'Hello world',
+			subject: 'Welcome',
 			html: template.html,
 		}
 

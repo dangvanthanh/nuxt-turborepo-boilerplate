@@ -1,0 +1,25 @@
+{
+	"name": "@repo/emails",
+	"type": "module",
+	"version": "0.0.1",
+	"main": "./nuxt.config.ts",
+	"scripts": {
+		"dev": "nuxi dev .playground",
+		"build": "nuxt build .playground",
+		"generate": "nuxt generate .playground",
+		"preview": "nuxt preview .playground",
+		"postinstall": "nuxt prepare .playground",
+		"lint": "pnpm dlx @biomejs/biome check ./ --apply",
+		"format": "pnpm dlx @biomejs/biome format ./ --write",
+		"update": "pnpm dlx npm-check-updates -ui"
+	},
+	"devDependencies": {
+		"@repo/biome-config": "workspace:*",
+		"nuxt": "^3.11.1",
+		"typescript": "^5.4.3"
+	},
+	"dependencies": {
+		"@vue-email/nuxt": "^0.8.19",
+		"resend": "^3.2.0"
+	}
+}

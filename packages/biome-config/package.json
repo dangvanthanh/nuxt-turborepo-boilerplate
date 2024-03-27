@@ -4,13 +4,14 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		"./biome": "./biome.json"
+		"./biome": "./biome.json",
+		"./biome-nuxt": "./biome-nuxt.json"
 	},
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.6.2"
+		"@biomejs/biome": "1.6.3"
 	}
 }

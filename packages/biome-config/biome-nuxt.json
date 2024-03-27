@@ -14,5 +14,14 @@
 			"quoteStyle": "single",
 			"semicolons": "asNeeded"
 		}
+	},
+	"files": {
+		"ignore": [
+			"./.nuxt/**",
+			"./.output/**",
+			"./.turbo/**",
+			"./.plaground",
+			"./dist/**"
+		]
 	}
 }

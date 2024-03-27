@@ -9,6 +9,7 @@ This turborepo uses [pnpm](https://pnpm.io/) as a package manager. It includes t
 ### Apps, Layers and Packages
 
 - `web`: Nuxt app
+- `emails`: Nuxt layer for shared emails
 - `ui`: Nuxt layer for shared ui
 - `biome-config`: Biome config for the repo
 - `typescript-config`: TypeScript config for the repo
