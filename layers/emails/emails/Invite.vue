@@ -23,7 +23,7 @@ const tailwindConfig = {
     <EContainer>
       <EText>Hi {{ props.name }}</EText>
       <EText>
-        Welcome to Nuxt Emails.
+        Invite to Nuxt Emails.
       </EText>
       <EButton class="bg-primary px-4 py-2 font-medium leading-4 text-white text-center rounded">
         Get Started

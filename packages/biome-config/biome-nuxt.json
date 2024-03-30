@@ -20,7 +20,7 @@
 			"./.nuxt/**",
 			"./.output/**",
 			"./.turbo/**",
-			"./.plaground",
+			"./.playground",
 			"./dist/**"
 		]
 	}
