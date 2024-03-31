@@ -2,9 +2,9 @@
 const emails = ref()
 const template = ref()
 const body = reactive({
-  recipient: '',
-  subject: '',
-  filename: ''
+	recipient: '',
+	subject: '',
+	filename: '',
 })
 const disabled = ref(false)
 const selectedMail = ref(null)
@@ -13,27 +13,27 @@ const { data } = await useFetch('/api/emails')
 emails.value = data.value
 
 const handleSendMail = async () => {
-  try {
-    disabled.value = true
-    await $fetch('/api/emails/send', {
-      method: 'POST',
-      body
-    })
-    disabled.value = false
-  } catch {
-    disabled.value = false
-  }
+	try {
+		disabled.value = true
+		await $fetch('/api/emails/send', {
+			method: 'POST',
+			body,
+		})
+		disabled.value = false
+	} catch {
+		disabled.value = false
+	}
 }
 
 const handleGetMail = async (id) => {
-  const data = await $fetch(`/api/emails/render/${id}`, {
-    method: 'POST',
-  })
+	const data = await $fetch(`/api/emails/render/${id}`, {
+		method: 'POST',
+	})
 
-  selectedMail.value = emails.value.find((email) => email.filename === id)
-  template.value = data
-  body.subject = selectedMail.value.label
-  body.filename = id
+	selectedMail.value = emails.value.find((email) => email.filename === id)
+	template.value = data
+	body.subject = selectedMail.value.label
+	body.filename = id
 }
 </script>
 
