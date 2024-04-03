@@ -13,13 +13,14 @@
 		"update": "pnpm dlx npm-check-updates -ui"
 	},
 	"dependencies": {
+		"@nuxtjs/color-mode": "^3.3.3",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"nuxt": "^3.11.1",
 		"vue": "^3.4.21",
 		"vue-router": "^4.3.0"
 	},
 	"devDependencies": {
-		"@repo/biome-config": "workspace:*"
+		"@repo/biome-config": "workspace:*",
+		"nuxt": "^3.11.1"
 	}
 }

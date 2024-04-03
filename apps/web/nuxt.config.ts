@@ -2,4 +2,9 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	extends: ['@repo/emails', '@repo/ui'],
+	modules: ['@nuxtjs/color-mode'],
+	colorMode: {
+		preference: 'light',
+		classSuffix: '',
+	},
 })

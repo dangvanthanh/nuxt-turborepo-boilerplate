@@ -13,13 +13,16 @@
 		"@repo/typescript-config": "workspace:*",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
-		"turbo": "latest"
+		"turbo": "^1.13.2"
 	},
 	"packageManager": "pnpm@8.9.0",
 	"engines": {
 		"node": ">=18"
 	},
 	"lint-staged": {
-		"*.{js,ts,vue}": ["pnpm run lint", "pnpm run format"]
+		"*.{js,ts,vue}": [
+			"pnpm run lint",
+			"pnpm run format"
+		]
 	}
 }

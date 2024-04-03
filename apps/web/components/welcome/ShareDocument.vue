@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const link = ref('https://www.paga-ui.com')
+</script>
+
 <template>
   <UiCard>
     <UiCardHeader>
@@ -8,7 +12,7 @@
     </UiCardHeader>
     <UiCardContent>
       <div class="flex space-x-2">
-        <UiInput value="http://example.com/link/to/document" read-only />
+        <UiInput type="text" v-model="link" readonly />
         <UiButton variant="secondary" class="shrink-0">
           Copy Link
         </UiButton>

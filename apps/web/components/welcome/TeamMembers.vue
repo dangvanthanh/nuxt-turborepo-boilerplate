@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const sofiaRole = ref('Owner')
 const jacksonRole = ref('Member')
 </script>
