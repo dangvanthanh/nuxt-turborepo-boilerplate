@@ -8,9 +8,9 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"lint": "pnpm dlx @biomejs/biome check ./ --apply",
-		"format": "pnpm dlx @biomejs/biome format ./ --write",
-		"update": "pnpm dlx npm-check-updates -ui"
+		"lint": "bunx @biomejs/biome check ./ --apply",
+		"format": "bunx @biomejs/biome format ./ --write",
+		"update": "bunx npm-check-updates -ui"
 	},
 	"dependencies": {
 		"@nuxtjs/color-mode": "^3.3.3",
@@ -21,6 +21,6 @@
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.11.1"
+		"nuxt": "^3.11.2"
 	}
 }

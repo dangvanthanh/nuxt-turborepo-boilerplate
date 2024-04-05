@@ -9,13 +9,13 @@
 		"generate": "nuxt generate .playground",
 		"preview": "nuxt preview .playground",
 		"postinstall": "nuxt prepare .playground",
-		"lint": "pnpm dlx @biomejs/biome check ./ --apply",
-		"format": "pnpm dlx @biomejs/biome format ./ --write",
-		"update": "pnpm dlx npm-check-updates -ui"
+		"lint": "bunx @biomejs/biome check ./ --apply",
+		"format": "bunx @biomejs/biome format ./ --write",
+		"update": "bunx npm-check-updates -ui"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.11.1",
-		"typescript": "^5.4.3"
+		"nuxt": "^3.11.2",
+		"typescript": "^5.4.4"
 	}
 }

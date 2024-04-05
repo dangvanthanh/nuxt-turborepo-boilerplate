@@ -15,14 +15,12 @@
 		"lint-staged": "^15.2.2",
 		"turbo": "^1.13.2"
 	},
-	"packageManager": "pnpm@8.9.0",
+	"packageManager": "bun@1.1.0",
 	"engines": {
 		"node": ">=18"
 	},
+	"workspaces": ["apps/*", "layers/*", "packages/*"],
 	"lint-staged": {
-		"*.{js,ts,vue}": [
-			"pnpm run lint",
-			"pnpm run format"
-		]
+		"*.{js,ts,vue}": ["bun run lint", "bun run format"]
 	}
 }

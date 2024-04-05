@@ -7,7 +7,7 @@ Create Nuxt extendable layer with this GitHub template.
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+bun install
 ```
 
 ## Working on your theme
@@ -16,7 +16,7 @@ Your theme is at the root of this repository, it is exactly like a regular Nuxt 
 
 The `.playground` directory should help you on trying your theme during development.
 
-Running `pnpm dev` will prepare and boot `.playground` directory, which imports your theme itself.
+Running `bun dev` will prepare and boot `.playground` directory, which imports your theme itself.
 
 ## Distributing your theme
 
@@ -47,7 +47,7 @@ defineNuxtConfig({
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm dev
+bun dev
 ```
 
 ## Production
@@ -55,19 +55,19 @@ pnpm dev
 Build the application for production:
 
 ```bash
-pnpm build
+bun build
 ```
 
 Or statically generate it with:
 
 ```bash
-pnpm generate
+bun generate
 ```
 
 Locally preview production build:
 
 ```bash
-pnpm preview
+bun preview
 ```
 
 Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

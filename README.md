@@ -4,7 +4,7 @@
 
 ## What's inside?
 
-This turborepo uses [pnpm](https://pnpm.io/) as a package manager. It includes the following packages/apps:
+This turborepo uses [bun](https://bun.sh/) as a package manager. It includes the following packages/apps:
 
 ### Apps, Layers and Packages
 
@@ -32,7 +32,7 @@ To build all apps and packages, run the following command:
 
 ```
 cd nuxt-turborepo-boilerplate
-pnpm build
+bun build
 ```
 
 ### Develop
@@ -41,7 +41,7 @@ To develop all apps and packages, run the following command:
 
 ```
 cd nuxt-turborepo-boilerplate
-pnpm dev
+bun dev
 ```
 
 ### Remote Caching
