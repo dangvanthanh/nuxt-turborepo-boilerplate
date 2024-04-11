@@ -5,15 +5,15 @@ import { DrawerTrigger as UiDrawerTrigger } from 'vaul-vue'
 const { theme, setTheme } = useTheme()
 
 const themes = ref([
-  { name: 'aliceblue', color: '#f0f8ff' },
-  { name: 'antiquewhite', color: '#faebd7' },
-  { name: 'aqua', color: '#00ffff' },
-  { name: 'aquamarine', color: '#7fffd4' },
-  { name: 'azure', color: '#f0ffff' },
-  { name: 'beige', color: '#f5f5dc' },
-  { name: 'bisque', color: '#ffe4c4 ' },
-  { name: 'black', color: '#000000 ' },
-  { name: 'blanchedalmond', color: '#ffffcd ' },
+	{ name: 'aliceblue', color: '#f0f8ff' },
+	{ name: 'antiquewhite', color: '#faebd7' },
+	{ name: 'aqua', color: '#00ffff' },
+	{ name: 'aquamarine', color: '#7fffd4' },
+	{ name: 'azure', color: '#f0ffff' },
+	{ name: 'beige', color: '#f5f5dc' },
+	{ name: 'bisque', color: '#ffe4c4 ' },
+	{ name: 'black', color: '#000000 ' },
+	{ name: 'blanchedalmond', color: '#ffffcd ' },
 ])
 </script>
 

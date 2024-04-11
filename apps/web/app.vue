@@ -3,16 +3,16 @@ import { Coffee, Monitor, Moon, Sun } from 'lucide-vue-next'
 import { ConfigProvider } from 'radix-vue'
 
 useHead({
-  title: 'Nuxt Turborepo Boilerplate',
+	title: 'Nuxt Turborepo Boilerplate',
 })
 
 const colorMode = useColorMode()
 const useIdFunction = () => useId()
 const colors = ref([
-  { name: 'system', icon: Monitor },
-  { name: 'light', icon: Sun },
-  { name: 'dark', icon: Moon },
-  { name: 'sepia', icon: Coffee },
+	{ name: 'system', icon: Monitor },
+	{ name: 'light', icon: Sun },
+	{ name: 'dark', icon: Moon },
+	{ name: 'sepia', icon: Coffee },
 ])
 </script>
 
