@@ -1,0 +1,31 @@
+.theme-aliceblue {
+  --primary: 208 100% 97%;
+}
+
+.theme-antiquewhite {
+  --primary: 34 78% 91%;
+}
+
+.theme-aqua {
+  --primary: 180 100% 50%;
+}
+
+.theme-azure {
+  --primary: 180 100% 97%;
+}
+
+.theme-beige {
+  --primary: 60 56% 91%;
+}
+
+.theme-bisque {
+  --primary: 33 100% 88%;
+}
+
+.theme-black {
+  --primary: 0 0% 0%;
+}
+
+.theme-blanchedalmond {
+  --primary: 60 100% 90%;
+}

@@ -13,7 +13,7 @@
 		"update": "bunx npm-check-updates -ui"
 	},
 	"dependencies": {
-		"@nuxtjs/color-mode": "^3.3.3",
+		"@nuxtjs/color-mode": "^3.4.0",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
 		"vue": "^3.4.21",

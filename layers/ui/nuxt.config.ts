@@ -10,7 +10,10 @@ export default defineNuxtConfig({
 		prefix: '',
 		componentDir: './components/ui',
 	},
-	css: [resolve('./assets/css/tailwind.css')],
+	css: [
+		resolve('./assets/css/tailwind.css'),
+		resolve('./assets/css/theme.css'),
+	],
 	alias: {
 		'@': resolve('./'),
 		'~': resolve('./'),
