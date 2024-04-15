@@ -16,6 +16,6 @@
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.11.2",
-		"typescript": "^5.4.4"
+		"typescript": "^5.4.5"
 	}
 }
