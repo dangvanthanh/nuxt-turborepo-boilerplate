@@ -16,7 +16,7 @@
 		"@nuxtjs/color-mode": "^3.4.0",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"vue": "^3.4.21",
+		"vue": "^3.4.22",
 		"vue-router": "^4.3.0"
 	},
 	"devDependencies": {
