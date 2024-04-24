@@ -1,24 +1,24 @@
 <script setup lang="ts">
 interface Props {
-  name?: string,
-  company?: string
-  url?: string
+	name?: string
+	company?: string
+	url?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  name: 'Your Name',
-  company: 'Your Company',
-  url: 'https://github.com/dangvanthanh/nuxt-turborepo-boilerplate'
+	name: 'Your Name',
+	company: 'Your Company',
+	url: 'https://github.com/dangvanthanh/nuxt-turborepo-boilerplate',
 })
 
 const tailwindConfig = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#0065da',
-      },
-    },
-  },
+	theme: {
+		extend: {
+			colors: {
+				primary: '#0065da',
+			},
+		},
+	},
 }
 </script>
 

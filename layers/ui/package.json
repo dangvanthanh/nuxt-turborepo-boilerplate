@@ -15,7 +15,7 @@
 		"update": "bunx npm-check-updates -ui"
 	},
 	"devDependencies": {
-		"@nuxtjs/tailwindcss": "^6.11.4",
+		"@nuxtjs/tailwindcss": "^6.12.0",
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.11.2",
 		"shadcn-nuxt": "^0.10.2",
@@ -25,17 +25,17 @@
 		"@vee-validate/zod": "^4.12.6",
 		"@vueuse/core": "^10.9.0",
 		"class-variance-authority": "^0.7.0",
-		"clsx": "^2.1.0",
+		"clsx": "^2.1.1",
 		"embla-carousel": "^8.0.2",
 		"embla-carousel-vue": "^8.0.2",
-		"lucide-vue-next": "^0.368.0",
-		"radix-vue": "^1.7.0",
-		"tailwind-merge": "^2.2.2",
+		"lucide-vue-next": "^0.373.0",
+		"radix-vue": "^1.7.2",
+		"tailwind-merge": "^2.3.0",
 		"tailwindcss-animate": "^1.0.7",
 		"v-calendar": "^3.1.2",
 		"vaul-vue": "^0.1.0",
 		"vee-validate": "^4.12.6",
 		"vue-sonner": "^1.1.2",
-		"zod": "^3.22.4"
+		"zod": "^3.23.4"
 	}
 }

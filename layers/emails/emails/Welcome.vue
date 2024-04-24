@@ -1,22 +1,22 @@
 <script setup lang="ts">
 interface Props {
-  name?: string
-  company?: string
+	name?: string
+	company?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  name: 'Your Name',
-  company: 'Your Company',
+	name: 'Your Name',
+	company: 'Your Company',
 })
 
 const tailwindConfig = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#0065da',
-      },
-    },
-  },
+	theme: {
+		extend: {
+			colors: {
+				primary: '#0065da',
+			},
+		},
+	},
 }
 </script>
 
