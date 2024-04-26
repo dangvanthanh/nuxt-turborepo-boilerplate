@@ -93,7 +93,7 @@ function dispatch(action: Action) {
 			if (toastId) {
 				addToRemoveQueue(toastId)
 			} else {
-				state.value.toasts.forEach((toast) => {
+				state.value.toasts.forEach((toast, _) => {
 					addToRemoveQueue(toast.id)
 				})
 			}

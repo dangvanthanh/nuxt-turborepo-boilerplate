@@ -1,11 +1,12 @@
 <script lang="ts" setup>
-import { type HTMLAttributes, computed } from 'vue'
+import { cn } from '@/lib/utils'
 import {
 	RangeCalendarRoot,
 	type RangeCalendarRootEmits,
 	type RangeCalendarRootProps,
 	useForwardPropsEmits,
 } from 'radix-vue'
+import { type HTMLAttributes, computed } from 'vue'
 import {
 	RangeCalendarCell,
 	RangeCalendarCellTrigger,
@@ -19,7 +20,6 @@ import {
 	RangeCalendarNextButton,
 	RangeCalendarPrevButton,
 } from '.'
-import { cn } from '@/lib/utils'
 
 const props = defineProps<
 	RangeCalendarRootProps & { class?: HTMLAttributes['class'] }

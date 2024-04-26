@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
+import { cn } from '@/lib/utils'
 import type { SliderRootEmits, SliderRootProps } from 'radix-vue'
 import {
 	SliderRange,
@@ -8,7 +8,7 @@ import {
 	SliderTrack,
 	useForwardPropsEmits,
 } from 'radix-vue'
-import { cn } from '@/lib/utils'
+import { type HTMLAttributes, computed } from 'vue'
 
 const props = defineProps<
 	SliderRootProps & { class?: HTMLAttributes['class'] }

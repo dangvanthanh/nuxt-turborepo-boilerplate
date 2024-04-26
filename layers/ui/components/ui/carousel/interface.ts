@@ -11,9 +11,7 @@ export interface CarouselProps {
 	orientation?: 'horizontal' | 'vertical'
 }
 
-export interface CarouselEmits {
-	(e: 'init-api', payload: CarouselApi): void
-}
+export type CarouselEmits = (e: 'init-api', payload: CarouselApi) => void
 
 export interface WithClassAsProps {
 	class?: HTMLAttributes['class']

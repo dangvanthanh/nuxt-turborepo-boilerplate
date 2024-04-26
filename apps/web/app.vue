@@ -5,29 +5,29 @@ import { Moon, Palette, Sun } from 'lucide-vue-next'
 import { ConfigProvider } from 'radix-vue'
 
 useHead({
-  title: 'Nuxt Turborepo Boilerplate',
+	title: 'Nuxt Turborepo Boilerplate',
 })
 
 const useIdFunction = () => useId()
 const { theme, setTheme } = useTheme()
 const colorMode = useColorMode()
 const themes = ref([
-  { name: 'light', icon: Sun },
-  { name: 'dark', icon: Moon },
+	{ name: 'light', icon: Sun },
+	{ name: 'dark', icon: Moon },
 ])
 const colors = ref([
-  { name: 'zinc', color: '#3f3f46' },
-  { name: 'rose', color: '#be123c' },
-  { name: 'blue', color: '#1d4ed8' },
-  { name: 'green', color: '#15803d' },
-  { name: 'orange', color: '#c2410c' },
-  { name: 'red', color: '#b91c1c' },
-  { name: 'slate', color: '#334155 ' },
-  { name: 'stone', color: '#44403c ' },
-  { name: 'gray', color: '#374151 ' },
-  { name: 'neutral', color: '#404040 ' },
-  { name: 'yellow', color: '#a16207 ' },
-  { name: 'violet', color: '#6d28d9 ' },
+	{ name: 'zinc', color: '#3f3f46' },
+	{ name: 'rose', color: '#be123c' },
+	{ name: 'blue', color: '#1d4ed8' },
+	{ name: 'green', color: '#15803d' },
+	{ name: 'orange', color: '#c2410c' },
+	{ name: 'red', color: '#b91c1c' },
+	{ name: 'slate', color: '#334155 ' },
+	{ name: 'stone', color: '#44403c ' },
+	{ name: 'gray', color: '#374151 ' },
+	{ name: 'neutral', color: '#404040 ' },
+	{ name: 'yellow', color: '#a16207 ' },
+	{ name: 'violet', color: '#6d28d9 ' },
 ])
 </script>
 

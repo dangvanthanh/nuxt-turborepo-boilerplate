@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
+import { cn } from '@/lib/utils'
 import {
 	MenubarTrigger,
 	type MenubarTriggerProps,
 	useForwardProps,
 } from 'radix-vue'
-import { cn } from '@/lib/utils'
+import { type HTMLAttributes, computed } from 'vue'
 
 const props = defineProps<
 	MenubarTriggerProps & { class?: HTMLAttributes['class'] }

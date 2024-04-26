@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 import { useVModel } from '@vueuse/core'
 import { ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import type { Calendar } from 'v-calendar'
-import { DatePicker } from 'v-calendar'
+import type { DatePicker } from 'v-calendar'
 import { computed, nextTick, onMounted, ref, useSlots } from 'vue'
 import { isVCalendarSlot } from '.'
-import { cn } from '@/lib/utils'
-import { buttonVariants } from '@/components/ui/button'
 
 /* Extracted from v-calendar */
 type DatePickerModel = DatePickerDate | DatePickerRangeObject
@@ -41,9 +41,10 @@ const props = withDefaults(
 		columns: 1,
 	},
 )
-const emits = defineEmits<{
-	(e: 'update:modelValue', payload: typeof props.modelValue): void
-}>()
+const emits =
+	defineEmits<
+		(e: 'update:modelValue', payload: typeof props.modelValue) => void
+	>()
 
 const modelValue = useVModel(props, 'modelValue', emits, {
 	passive: true,
@@ -72,7 +73,7 @@ const $slots = useSlots()
 const vCalendarSlots = computed(() => {
 	return Object.keys($slots)
 		.filter((name) => isVCalendarSlot(name))
-		.reduce((obj: Record<string, any>, key: string) => {
+		.reduce((obj: Record<string, unknown>, key: string) => {
 			obj[key] = $slots[key]
 			return obj
 		}, {})
