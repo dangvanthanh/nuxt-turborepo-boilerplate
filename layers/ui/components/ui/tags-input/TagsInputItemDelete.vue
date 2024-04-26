@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import { X } from 'lucide-vue-next'
+import { type HTMLAttributes, computed } from 'vue'
 import {
 	TagsInputItemDelete,
 	type TagsInputItemDeleteProps,
 	useForwardProps,
 } from 'radix-vue'
-import { type HTMLAttributes, computed } from 'vue'
+import { X } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<
 	TagsInputItemDeleteProps & { class?: HTMLAttributes['class'] }

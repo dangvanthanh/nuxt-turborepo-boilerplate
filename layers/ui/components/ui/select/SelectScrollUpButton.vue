@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import { ChevronUp } from 'lucide-vue-next'
+import { type HTMLAttributes, computed } from 'vue'
 import {
 	SelectScrollUpButton,
 	type SelectScrollUpButtonProps,
 	useForwardProps,
 } from 'radix-vue'
-import { type HTMLAttributes, computed } from 'vue'
+import { ChevronUp } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<
 	SelectScrollUpButtonProps & { class?: HTMLAttributes['class'] }

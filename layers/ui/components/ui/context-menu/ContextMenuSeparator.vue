@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import { ContextMenuSeparator, type ContextMenuSeparatorProps } from 'radix-vue'
 import { type HTMLAttributes, computed } from 'vue'
+import { ContextMenuSeparator, type ContextMenuSeparatorProps } from 'radix-vue'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<
 	ContextMenuSeparatorProps & { class?: HTMLAttributes['class'] }

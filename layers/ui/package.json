@@ -18,7 +18,7 @@
 		"@nuxtjs/tailwindcss": "^6.12.0",
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.11.2",
-		"shadcn-nuxt": "^0.10.2",
+		"shadcn-nuxt": "^0.10.4",
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
@@ -28,7 +28,7 @@
 		"clsx": "^2.1.1",
 		"embla-carousel": "^8.0.2",
 		"embla-carousel-vue": "^8.0.2",
-		"lucide-vue-next": "^0.373.0",
+		"lucide-vue-next": "^0.375.0",
 		"radix-vue": "^1.7.2",
 		"tailwind-merge": "^2.3.0",
 		"tailwindcss-animate": "^1.0.7",
