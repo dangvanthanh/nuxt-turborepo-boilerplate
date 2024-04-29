@@ -13,10 +13,10 @@
 		"update": "bunx npm-check-updates -ui"
 	},
 	"dependencies": {
-		"@nuxtjs/color-mode": "^3.4.0",
+		"@nuxtjs/color-mode": "^3.4.1",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"vue": "^3.4.25",
+		"vue": "^3.4.26",
 		"vue-router": "^4.3.2"
 	},
 	"devDependencies": {

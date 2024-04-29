@@ -45,3 +45,17 @@
 .theme-violet {
   --primary: 263 70% 50%;
 }
+
+.dark .theme-zinc,
+.dark .theme-rose,
+.dark .theme-blue,
+.dark .theme-orange,
+.dark .theme-red,
+.dark .theme-slate,
+.dark .theme-stone,
+.dark .theme-gray,
+.dark .theme-neutral,
+.dark .theme-yellow,
+.dark .theme-violet {
+  --primary-foreground: 0 0% 100%;
+}
