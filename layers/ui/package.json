@@ -28,7 +28,7 @@
 		"clsx": "^2.1.1",
 		"embla-carousel": "^8.0.2",
 		"embla-carousel-vue": "^8.0.2",
-		"lucide-vue-next": "^0.376.0",
+		"lucide-vue-next": "^0.377.0",
 		"radix-vue": "^1.7.3",
 		"tailwind-merge": "^2.3.0",
 		"tailwindcss-animate": "^1.0.7",
@@ -36,6 +36,6 @@
 		"vaul-vue": "^0.1.0",
 		"vee-validate": "^4.12.6",
 		"vue-sonner": "^1.1.2",
-		"zod": "^3.23.4"
+		"zod": "^3.23.5"
 	}
 }
