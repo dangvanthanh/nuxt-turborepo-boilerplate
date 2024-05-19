@@ -22,7 +22,7 @@ const config = useRuntimeConfig()
 const endpoint = 'https://api.github.com/graphql'
 const authToken = config.public.githubToken
 const requestHeaders = {
-	authorization: `Bearer ${authToken}`,
+	Authorization: `Bearer ${authToken}`,
 }
 
 const query = gql`
@@ -42,15 +42,8 @@ const query = gql`
   }
 `
 
-// const data = (await request({
-// 	url: endpoint,
-// 	document: query,
-// 	requestHeaders,
-// })) as Repository
-
 const client = new GraphQLClient(endpoint)
-const data = await client.request(query, {}, requestHeaders) as Repository
-
+const data = (await client.request(query, {}, requestHeaders)) as Repository
 const repository = data?.repository
 </script>
 
