@@ -8,6 +8,8 @@ export default defineNuxtConfig({
 		classSuffix: '',
 	},
 	runtimeConfig: {
-		githubToken: process.env.GITHUB_TOKEN,
+		public: {
+			githubToken: process.env.PUBLIC_GITHUB_TOKEN,
+		},
 	},
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { gql, request } from 'graphql-request'
+import { GraphQLClient, gql } from 'graphql-request'
 
 type BaseRepository = {
 	id: string
@@ -20,7 +20,7 @@ type Repository = {
 
 const config = useRuntimeConfig()
 const endpoint = 'https://api.github.com/graphql'
-const authToken = config.githubToken
+const authToken = config.public.githubToken
 const requestHeaders = {
 	authorization: `Bearer ${authToken}`,
 }
@@ -42,11 +42,14 @@ const query = gql`
   }
 `
 
-const data = (await request({
-	url: endpoint,
-	document: query,
-	requestHeaders,
-})) as Repository
+// const data = (await request({
+// 	url: endpoint,
+// 	document: query,
+// 	requestHeaders,
+// })) as Repository
+
+const client = new GraphQLClient(endpoint)
+const data = await client.request(query, {}, requestHeaders) as Repository
 
 const repository = data?.repository
 </script>
