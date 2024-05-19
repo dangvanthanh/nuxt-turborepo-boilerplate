@@ -7,4 +7,7 @@ export default defineNuxtConfig({
 		preference: 'light',
 		classSuffix: '',
 	},
+	runtimeConfig: {
+		githubToken: process.env.GITHUB_TOKEN,
+	},
 })

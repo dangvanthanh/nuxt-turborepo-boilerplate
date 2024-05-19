@@ -16,7 +16,9 @@
 		"@nuxtjs/color-mode": "^3.4.1",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"vue": "^3.4.26",
+		"graphql": "^16.8.1",
+		"graphql-request": "^7.0.1",
+		"vue": "^3.4.27",
 		"vue-router": "^4.3.2"
 	},
 	"devDependencies": {
