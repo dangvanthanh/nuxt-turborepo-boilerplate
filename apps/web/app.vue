@@ -37,9 +37,10 @@ const colors = ref([
       <div class="container mx-auto pt-8">
         <div class="flex items-center justify-center gap-2">
           <template v-for="color in colors.slice(0, 5)" :key="color.name">
-            <UiButton variant="outline"
-              :class="cn('w-8 h-8 p-0 rounded-full', theme === color.name ? 'border-4 border-black' : '')"
-              @click.prevent="setTheme(color.name)">
+            <UiButton variant="outline" :class="cn(
+              'w-8 h-8 p-0 rounded-full',
+              theme === color.name ? 'border-4 border-black' : '',
+            )" @click.prevent="setTheme(color.name)">
               <span class="w-5 h-5 rounded-full" :style="`background: ${color.color}`"></span>
             </UiButton>
           </template>
@@ -65,9 +66,10 @@ const colors = ref([
                     <UiLabel for="color">Color</UiLabel>
                     <div class="grid grid-cols-3 gap-2 py-1.5">
                       <template v-for="color in colors" :key="color.name">
-                        <UiButton variant="outline"
-                          :class="cn('py-2 h-8 justify-start', theme === color.name ? 'border-2 border-black' : '')"
-                          @click.prevent="setTheme(color.name)">
+                        <UiButton variant="outline" :class="cn(
+                          'py-2 h-8 justify-start',
+                          theme === color.name ? 'border-2 border-black' : '',
+                        )" @click.prevent="setTheme(color.name)">
                           <span class="w-4 h-4 rounded-full mr-2" :style="`background: ${color.color}`"></span>
                           <span class="capitalize text-xs">{{ color.name }}</span>
                         </UiButton>
