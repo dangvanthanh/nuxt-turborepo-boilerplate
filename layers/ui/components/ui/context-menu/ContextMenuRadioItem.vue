@@ -1,22 +1,24 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
-import {
-  ContextMenuItemIndicator,
-  ContextMenuRadioItem,
-  type ContextMenuRadioItemEmits,
-  type ContextMenuRadioItemProps,
-  useForwardPropsEmits,
-} from 'radix-vue'
-import { Circle } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
+import { Circle } from 'lucide-vue-next'
+import {
+	ContextMenuItemIndicator,
+	ContextMenuRadioItem,
+	type ContextMenuRadioItemEmits,
+	type ContextMenuRadioItemProps,
+	useForwardPropsEmits,
+} from 'radix-vue'
+import { type HTMLAttributes, computed } from 'vue'
 
-const props = defineProps<ContextMenuRadioItemProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<
+	ContextMenuRadioItemProps & { class?: HTMLAttributes['class'] }
+>()
 const emits = defineEmits<ContextMenuRadioItemEmits>()
 
 const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props
+	const { class: _, ...delegated } = props
 
-  return delegated
+	return delegated
 })
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits)

@@ -1,29 +1,35 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { TrashIcon } from 'lucide-vue-next'
-import AutoFormLabel from './AutoFormLabel.vue'
-import { beautifyObjectName } from './utils'
-import type { FieldProps } from './interface'
-import { FormControl, FormDescription, FormField, FormItem, FormMessage } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import {
+	FormControl,
+	FormDescription,
+	FormField,
+	FormItem,
+	FormMessage,
+} from '@/components/ui/form'
+import { Input } from '@/components/ui/input'
+import { TrashIcon } from 'lucide-vue-next'
+import { ref } from 'vue'
+import AutoFormLabel from './AutoFormLabel.vue'
+import type { FieldProps } from './interface'
+import { beautifyObjectName } from './utils'
 
 defineProps<FieldProps>()
 
 const inputFile = ref<File>()
 async function parseFileAsString(file: File | undefined): Promise<string> {
-  return new Promise((resolve, reject) => {
-    if (file) {
-      const reader = new FileReader()
-      reader.onloadend = () => {
-        resolve(reader.result as string)
-      }
-      reader.onerror = (err) => {
-        reject(err)
-      }
-      reader.readAsDataURL(file)
-    }
-  })
+	return new Promise((resolve, reject) => {
+		if (file) {
+			const reader = new FileReader()
+			reader.onloadend = () => {
+				resolve(reader.result as string)
+			}
+			reader.onerror = (err) => {
+				reject(err)
+			}
+			reader.readAsDataURL(file)
+		}
+	})
 }
 </script>
 

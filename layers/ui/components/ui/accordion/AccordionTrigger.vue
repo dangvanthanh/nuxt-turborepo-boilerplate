@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
-import {
-  AccordionHeader,
-  AccordionTrigger,
-  type AccordionTriggerProps,
-} from 'radix-vue'
-import { ChevronDown } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
+import { ChevronDown } from 'lucide-vue-next'
+import {
+	AccordionHeader,
+	AccordionTrigger,
+	type AccordionTriggerProps,
+} from 'radix-vue'
+import { type HTMLAttributes, computed } from 'vue'
 
-const props = defineProps<AccordionTriggerProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<
+	AccordionTriggerProps & { class?: HTMLAttributes['class'] }
+>()
 
 const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props
+	const { class: _, ...delegated } = props
 
-  return delegated
+	return delegated
 })
 </script>
 

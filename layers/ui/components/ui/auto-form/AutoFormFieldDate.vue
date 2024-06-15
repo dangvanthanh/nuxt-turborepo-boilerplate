@@ -1,20 +1,30 @@
 <script setup lang="ts">
+import {
+	FormControl,
+	FormDescription,
+	FormField,
+	FormItem,
+	FormMessage,
+} from '@/components/ui/form'
 import { DateFormatter, getLocalTimeZone } from '@internationalized/date'
 import { CalendarIcon } from 'lucide-vue-next'
-import { beautifyObjectName } from './utils'
 import AutoFormLabel from './AutoFormLabel.vue'
 import type { FieldProps } from './interface'
-import { FormControl, FormDescription, FormField, FormItem, FormMessage } from '@/components/ui/form'
+import { beautifyObjectName } from './utils'
 
-import { Calendar } from '@/components/ui/calendar'
 import { Button } from '@/components/ui/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { Calendar } from '@/components/ui/calendar'
+import {
+	Popover,
+	PopoverContent,
+	PopoverTrigger,
+} from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
 
 defineProps<FieldProps>()
 
 const df = new DateFormatter('en-US', {
-  dateStyle: 'long',
+	dateStyle: 'long',
 })
 </script>
 

@@ -2,7 +2,7 @@
 import { FormLabel } from '@/components/ui/form'
 
 defineProps<{
-  required?: boolean
+	required?: boolean
 }>()
 </script>
 

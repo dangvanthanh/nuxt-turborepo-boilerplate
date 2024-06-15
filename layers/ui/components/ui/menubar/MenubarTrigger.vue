@@ -1,14 +1,20 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
-import { MenubarTrigger, type MenubarTriggerProps, useForwardProps } from 'radix-vue'
 import { cn } from '@/lib/utils'
+import {
+	MenubarTrigger,
+	type MenubarTriggerProps,
+	useForwardProps,
+} from 'radix-vue'
+import { type HTMLAttributes, computed } from 'vue'
 
-const props = defineProps<MenubarTriggerProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<
+	MenubarTriggerProps & { class?: HTMLAttributes['class'] }
+>()
 
 const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props
+	const { class: _, ...delegated } = props
 
-  return delegated
+	return delegated
 })
 
 const forwardedProps = useForwardProps(delegatedProps)
