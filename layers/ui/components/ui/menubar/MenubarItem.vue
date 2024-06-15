@@ -1,23 +1,21 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import {
-	MenubarItem,
-	type MenubarItemEmits,
-	type MenubarItemProps,
-	useForwardPropsEmits,
-} from 'radix-vue'
 import { type HTMLAttributes, computed } from 'vue'
+import {
+  MenubarItem,
+  type MenubarItemEmits,
+  type MenubarItemProps,
+  useForwardPropsEmits,
+} from 'radix-vue'
+import { cn } from '@/lib/utils'
 
-const props = defineProps<
-	MenubarItemProps & { class?: HTMLAttributes['class']; inset?: boolean }
->()
+const props = defineProps<MenubarItemProps & { class?: HTMLAttributes['class'], inset?: boolean }>()
 
 const emits = defineEmits<MenubarItemEmits>()
 
 const delegatedProps = computed(() => {
-	const { class: _, ...delegated } = props
+  const { class: _, ...delegated } = props
 
-	return delegated
+  return delegated
 })
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits)

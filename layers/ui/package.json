@@ -1,41 +1,42 @@
 {
-	"name": "@repo/ui",
-	"type": "module",
-	"version": "0.0.1",
-	"main": "./nuxt.config.ts",
-	"scripts": {
-		"shadcn:init": "bunx shadcn-vue@latest init",
-		"shadcn:add": "bunx shadcn-vue@latest add",
-		"build": "nuxt build",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"lint": "bunx @biomejs/biome check ./ --apply",
-		"format": "bunx @biomejs/biome format ./ --write",
-		"update": "bunx npm-check-updates -ui"
-	},
-	"devDependencies": {
-		"@nuxtjs/tailwindcss": "^6.12.0",
-		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.11.2",
-		"shadcn-nuxt": "^0.10.4",
-		"typescript": "^5.4.5"
-	},
-	"dependencies": {
-		"@vee-validate/zod": "^4.13.1",
-		"@vueuse/core": "^10.10.0",
-		"class-variance-authority": "^0.7.0",
-		"clsx": "^2.1.1",
-		"embla-carousel": "^8.1.3",
-		"embla-carousel-vue": "^8.1.3",
-		"lucide-vue-next": "^0.390.0",
-		"radix-vue": "^1.8.3",
-		"tailwind-merge": "^2.3.0",
-		"tailwindcss-animate": "^1.0.7",
-		"v-calendar": "^3.1.2",
-		"vaul-vue": "^0.1.2",
-		"vee-validate": "^4.13.1",
-		"vue-sonner": "^1.1.2",
-		"zod": "^3.23.8"
-	}
+  "name": "@repo/ui",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "shadcn:init": "bunx shadcn-vue@latest init",
+    "shadcn:add": "bunx shadcn-vue@latest add",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "bunx @biomejs/biome check ./ --apply",
+    "format": "bunx @biomejs/biome format ./ --write",
+    "update": "bunx npm-check-updates -ui"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "nuxt": "^3.12.1",
+    "shadcn-nuxt": "^0.10.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@unovis/ts": "^1.4.1",
+    "@unovis/vue": "^1.4.1",
+    "@vee-validate/zod": "^4.13.1",
+    "@vueuse/core": "^10.11.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "embla-carousel": "^8.1.5",
+    "embla-carousel-vue": "^8.1.5",
+    "lucide-vue-next": "^0.395.0",
+    "radix-vue": "^1.8.3",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "v-calendar": "^3.1.2",
+    "vaul-vue": "^0.1.2",
+    "vee-validate": "^4.13.1",
+    "vue-sonner": "^1.1.2",
+    "zod": "^3.23.8"
+  }
 }

@@ -16,11 +16,11 @@
 	"devDependencies": {
 		"@repo/ui": "workspace:*",
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.11.2",
+		"nuxt": "^3.12.1",
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
 		"@vue-email/nuxt": "^0.8.19",
-		"resend": "^3.2.0"
+		"resend": "^3.3.0"
 	}
 }

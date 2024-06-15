@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import type { WithClassAsProps } from './interface'
 import { useCarousel } from './useCarousel'
+import type { WithClassAsProps } from './interface'
+import { cn } from '@/lib/utils'
 
 defineOptions({
-	inheritAttrs: false,
+  inheritAttrs: false,
 })
 
 const props = defineProps<WithClassAsProps>()

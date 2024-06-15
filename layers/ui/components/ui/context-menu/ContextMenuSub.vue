@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {
-	ContextMenuSub,
-	type ContextMenuSubEmits,
-	type ContextMenuSubProps,
-	useForwardPropsEmits,
+  ContextMenuSub,
+  type ContextMenuSubEmits,
+  type ContextMenuSubProps,
+  useForwardPropsEmits,
 } from 'radix-vue'
 
 const props = defineProps<ContextMenuSubProps>()

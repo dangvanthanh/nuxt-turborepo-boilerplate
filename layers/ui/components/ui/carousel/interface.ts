@@ -1,18 +1,20 @@
 import type {
-	EmblaCarouselType as CarouselApi,
-	EmblaOptionsType as CarouselOptions,
-	EmblaPluginType as CarouselPlugin,
+  EmblaCarouselType as CarouselApi,
+  EmblaOptionsType as CarouselOptions,
+  EmblaPluginType as CarouselPlugin,
 } from 'embla-carousel'
 import type { HTMLAttributes, Ref } from 'vue'
 
 export interface CarouselProps {
-	opts?: CarouselOptions | Ref<CarouselOptions>
-	plugins?: CarouselPlugin[] | Ref<CarouselPlugin[]>
-	orientation?: 'horizontal' | 'vertical'
+  opts?: CarouselOptions | Ref<CarouselOptions>
+  plugins?: CarouselPlugin[] | Ref<CarouselPlugin[]>
+  orientation?: 'horizontal' | 'vertical'
 }
 
-export type CarouselEmits = (e: 'init-api', payload: CarouselApi) => void
+export interface CarouselEmits {
+  (e: 'init-api', payload: CarouselApi): void
+}
 
 export interface WithClassAsProps {
-	class?: HTMLAttributes['class']
+  class?: HTMLAttributes['class']
 }

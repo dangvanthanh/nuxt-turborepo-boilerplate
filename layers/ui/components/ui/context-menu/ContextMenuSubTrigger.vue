@@ -1,24 +1,19 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
-import { ChevronRight } from 'lucide-vue-next'
-import {
-	ContextMenuSubTrigger,
-	type ContextMenuSubTriggerProps,
-	useForwardProps,
-} from 'radix-vue'
 import { type HTMLAttributes, computed } from 'vue'
+import {
+  ContextMenuSubTrigger,
+  type ContextMenuSubTriggerProps,
+  useForwardProps,
+} from 'radix-vue'
+import { ChevronRight } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
 
-const props = defineProps<
-	ContextMenuSubTriggerProps & {
-		class?: HTMLAttributes['class']
-		inset?: boolean
-	}
->()
+const props = defineProps<ContextMenuSubTriggerProps & { class?: HTMLAttributes['class'], inset?: boolean }>()
 
 const delegatedProps = computed(() => {
-	const { class: _, ...delegated } = props
+  const { class: _, ...delegated } = props
 
-	return delegated
+  return delegated
 })
 
 const forwardedProps = useForwardProps(delegatedProps)
