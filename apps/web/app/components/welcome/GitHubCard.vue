@@ -45,11 +45,11 @@ const query = gql`
 `
 
 try {
-  const client = new GraphQLClient(endpoint)
-  const data = (await client.request(query, {}, requestHeaders)) as Repository
-  repository.value = data?.repository
+	const client = new GraphQLClient(endpoint)
+	const data = (await client.request(query, {}, requestHeaders)) as Repository
+	repository.value = data?.repository
 } catch {
-  repository.value = null
+	repository.value = null
 }
 </script>
 

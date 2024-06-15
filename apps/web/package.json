@@ -8,7 +8,7 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"lint": "bunx @biomejs/biome check ./ --apply",
+		"lint": "bunx @biomejs/biome lint ./ --write",
 		"format": "bunx @biomejs/biome format ./ --write",
 		"update": "bunx npm-check-updates -ui"
 	},
