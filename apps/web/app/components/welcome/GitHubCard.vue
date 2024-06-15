@@ -25,6 +25,8 @@ const requestHeaders = {
 	Authorization: `Bearer ${authToken}`,
 }
 
+const repository = ref<BaseRepository | null>(null)
+
 const query = gql`
   query {
     repository(owner: "radix-vue", name: "shadcn-vue") {
@@ -42,13 +44,17 @@ const query = gql`
   }
 `
 
-const client = new GraphQLClient(endpoint)
-const data = (await client.request(query, {}, requestHeaders)) as Repository
-const repository = data?.repository
+try {
+  const client = new GraphQLClient(endpoint)
+  const data = (await client.request(query, {}, requestHeaders)) as Repository
+  repository.value = data?.repository
+} catch {
+  repository.value = null
+}
 </script>
 
 <template>
-  <UiCard>
+  <UiCard v-if="repository">
     <UiCardHeader class="grid grid-cols-[minmax(0,1fr)_110px] items-start gap-4 space-y-0">
       <div class="space-y-1">
         <UiCardTitle class="text-lg">{{ repository?.name }}</UiCardTitle>
