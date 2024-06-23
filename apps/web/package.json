@@ -16,13 +16,13 @@
 		"@nuxtjs/color-mode": "^3.4.1",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
-		"graphql": "^16.8.2",
-		"graphql-request": "^7.0.1",
-		"vue": "^3.4.29",
-		"vue-router": "^4.3.3"
+		"graphql": "^16.9.0",
+		"graphql-request": "^7.1.0",
+		"vue": "^3.4.30",
+		"vue-router": "^4.4.0"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.12.1"
+		"nuxt": "^3.12.2"
 	}
 }
