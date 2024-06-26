@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 	},
 	devtools: { enabled: true },
 	extends: ['@repo/emails', '@repo/ui'],
-	modules: ['@nuxtjs/color-mode'],
+	modules: ['nuxt-auth-utils', '@nuxtjs/color-mode'],
 	colorMode: {
 		preference: 'light',
 		classSuffix: '',
@@ -15,6 +15,12 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			githubToken: process.env.PUBLIC_GITHUB_TOKEN,
+		},
+		oauth: {
+			github: {
+				clientId: process.env.NUXT_OAUTH_GITHUB_CLIENT_ID,
+				clientSecret: process.env.NUXT_OAUTH_GITHUB_CLIENT_SECRET,
+			},
 		},
 	},
 })

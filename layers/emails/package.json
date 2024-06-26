@@ -21,6 +21,6 @@
 	},
 	"dependencies": {
 		"@vue-email/nuxt": "^0.8.19",
-		"resend": "^3.3.0"
+		"resend": "^3.4.0"
 	}
 }
