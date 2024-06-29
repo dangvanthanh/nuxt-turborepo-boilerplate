@@ -19,15 +19,15 @@
 		"typescript": "^5.5.2"
 	},
 	"dependencies": {
-		"@unovis/ts": "^1.4.1",
-		"@unovis/vue": "^1.4.1",
+		"@unovis/ts": "^1.4.2",
+		"@unovis/vue": "^1.4.2",
 		"@vee-validate/zod": "^4.13.1",
 		"@vueuse/core": "^10.11.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"embla-carousel": "^8.1.5",
 		"embla-carousel-vue": "^8.1.5",
-		"lucide-vue-next": "^0.397.0",
+		"lucide-vue-next": "^0.399.0",
 		"radix-vue": "^1.8.5",
 		"tailwind-merge": "^2.3.0",
 		"tailwindcss-animate": "^1.0.7",
