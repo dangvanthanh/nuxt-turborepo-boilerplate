@@ -16,8 +16,8 @@
 	"devDependencies": {
 		"@repo/ui": "workspace:*",
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.12.2",
-		"typescript": "^5.5.2"
+		"nuxt": "^3.12.3",
+		"typescript": "^5.5.3"
 	},
 	"dependencies": {
 		"@vue-email/nuxt": "^0.8.19",
