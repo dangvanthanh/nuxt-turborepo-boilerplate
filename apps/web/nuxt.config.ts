@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 		// https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
 		compatibilityVersion: 4,
 	},
+	compatibilityDate: '2024-07-21',
 	devtools: { enabled: true },
 	extends: ['@repo/emails', '@repo/ui'],
 	modules: ['nuxt-auth-utils', '@nuxtjs/color-mode'],

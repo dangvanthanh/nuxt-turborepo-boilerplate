@@ -4,6 +4,7 @@ const { resolve } = createResolver(import.meta.url)
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-07-21',
 	devtools: { enabled: true },
 	modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
 	shadcn: {
