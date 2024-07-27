@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-	title: 'Email Playground',
+	title: 'Email Playground | Nuxt Turborepo Boilerplate',
 })
 </script>
 

@@ -17,10 +17,10 @@
 		"@repo/ui": "workspace:*",
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.12.4",
-		"typescript": "^5.5.3"
+		"typescript": "^5.5.4"
 	},
 	"dependencies": {
 		"@vue-email/nuxt": "^0.8.19",
-		"resend": "^3.4.0"
+		"resend": "^3.5.0"
 	}
 }

@@ -4,6 +4,15 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Setup
 
+Change `.env.example` to `.env` and fill in the values.
+
+```bash
+PUBLIC_GITHUB_TOKEN=
+NUXT_SESSION_PASSWORD=
+NUXT_OAUTH_GITHUB_CLIENT_ID=
+NUXT_OAUTH_GITHUB_CLIENT_SECRET=
+```
+
 Make sure to install the dependencies:
 
 ```bash

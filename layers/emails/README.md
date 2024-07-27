@@ -4,6 +4,12 @@ Create Nuxt extendable layer with this GitHub template.
 
 ## Setup
 
+Change `.env.example` to `.env` and update Resend API key.
+
+```bash
+NUXT_RESEND_API_KEY=
+```
+
 Make sure to install the dependencies:
 
 ```bash
