@@ -8,8 +8,8 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"lint": "bunx @biomejs/biome lint ./ --write",
-		"format": "bunx @biomejs/biome format ./ --write",
+		"lint": "biome lint ./",
+		"format": "biome format ./ --write",
 		"update": "bunx npm-check-updates -ui"
 	},
 	"dependencies": {
@@ -18,12 +18,12 @@
 		"@repo/ui": "workspace:*",
 		"graphql": "^16.9.0",
 		"graphql-request": "^7.1.0",
-		"vue": "^3.4.34",
-		"vue-router": "^4.4.0"
+		"vue": "^3.4.35",
+		"vue-router": "^4.4.2"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.12.4",
-		"nuxt-auth-utils": "^0.2.1"
+		"nuxt-auth-utils": "^0.3.2"
 	}
 }

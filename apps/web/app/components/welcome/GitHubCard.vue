@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { GraphQLClient, gql } from 'graphql-request'
+import { onMounted } from 'vue';
 
 type BaseRepository = {
 	id: string
@@ -44,12 +45,18 @@ const query = gql`
   }
 `
 
-try {
-	const client = new GraphQLClient(endpoint)
-	const data = (await client.request(query, {}, requestHeaders)) as Repository
-	repository.value = data?.repository
-} catch {
-	repository.value = null
+onMounted(() => {
+  getRepository()
+})
+
+async function getRepository() {
+  try {
+    const client = new GraphQLClient(endpoint)
+    const data = (await client.request(query, {}, requestHeaders)) as Repository
+    repository.value = data?.repository
+  } catch {
+    repository.value = null
+  }
 }
 </script>
 

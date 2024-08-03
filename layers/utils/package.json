@@ -9,8 +9,8 @@
 		"generate": "nuxt generate .playground",
 		"preview": "nuxt preview .playground",
 		"postinstall": "nuxt prepare .playground",
-		"lint": "bunx @biomejs/biome lint ./ --write",
-		"format": "bunx @biomejs/biome format ./ --write",
+		"lint": "biome lint ./ --write",
+		"format": "biome format ./ --write",
 		"update": "bunx npm-check-updates -ui"
 	},
 	"devDependencies": {
