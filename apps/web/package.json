@@ -18,7 +18,7 @@
 		"@repo/ui": "workspace:*",
 		"graphql": "^16.9.0",
 		"graphql-request": "^7.1.0",
-		"vue": "^3.4.36",
+		"vue": "^3.4.37",
 		"vue-router": "^4.4.3"
 	},
 	"devDependencies": {
