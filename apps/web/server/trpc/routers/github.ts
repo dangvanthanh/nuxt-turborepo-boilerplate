@@ -43,11 +43,7 @@ export const github = publicProcedure
         }
       }
     `
-		const data = (await request(
-			endpoint,
-			query,
-			requestHeaders,
-		)) as Repository
+		const data = (await request(endpoint, query, requestHeaders)) as Repository
 
 		return {
 			repository: data?.repository,

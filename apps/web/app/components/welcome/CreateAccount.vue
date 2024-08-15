@@ -2,7 +2,7 @@
 const { $client } = useNuxtApp()
 
 const { data: hello } = await $client.hello.useQuery({
-  text: 'Create an account',
+	text: 'Create an account',
 })
 </script>
 
