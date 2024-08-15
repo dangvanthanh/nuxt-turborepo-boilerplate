@@ -25,6 +25,7 @@ This Turborepo has some additional tools already setup for you:
 - [Biome](https://biomejs.dev/) for code linting and formatting
 - [Shadcn-vue](https://www.shadcn-vue.com) - Beautifully designed components
 - [Vue Email](https://vuemail.net/) for generation of writing emails
+- [tRPC Nuxt](https://trpc-nuxt.vercel.app/) for end-to-end typesafe APIs in Nuxt applications.
 
 ### Build
 

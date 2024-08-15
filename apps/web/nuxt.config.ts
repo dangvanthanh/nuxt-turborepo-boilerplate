@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 	},
 	compatibilityDate: '2024-07-21',
 	devtools: { enabled: true },
+	build: { transpile: ['trpc-nuxt'] },
 	extends: ['@repo/emails', '@repo/ui'],
 	modules: ['nuxt-auth-utils', '@nuxtjs/color-mode'],
 	colorMode: {

@@ -1,8 +1,17 @@
+<script setup lang="ts">
+const { $client } = useNuxtApp()
+
+const { data: hello } = await $client.hello.useQuery({
+  text: 'Create an account',
+})
+</script>
+
+
 <template>
   <UiCard>
     <UiCardHeader class="space-y-1">
       <UiCardTitle class="text-lg">
-        Create an account
+        {{ hello?.title }}
       </UiCardTitle>
       <UiCardDescription>
         Enter your email below to create your account
@@ -11,11 +20,11 @@
     <UiCardContent class="grid gap-4">
       <div class="grid grid-cols-2 gap-6">
         <UiButton variant="outline">
-          <IconGithub class="mr-2 h-4 w-4"/>
+          <IconGithub class="mr-2 h-4 w-4" />
           Github
         </UiButton>
         <UiButton variant="outline">
-          <IconGoogle class="mr-2 h-4 w-4"/>
+          <IconGoogle class="mr-2 h-4 w-4" />
           Google
         </UiButton>
       </div>

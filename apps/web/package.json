@@ -16,14 +16,18 @@
 		"@nuxtjs/color-mode": "^3.4.2",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
+		"@trpc/client": "^10.45.2",
+		"@trpc/server": "^10.45.2",
 		"graphql": "^16.9.0",
 		"graphql-request": "^7.1.0",
+		"trpc-nuxt": "^0.10.22",
 		"vue": "^3.4.37",
-		"vue-router": "^4.4.3"
+		"vue-router": "^4.4.3",
+		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.12.4",
-		"nuxt-auth-utils": "^0.3.2"
+		"nuxt-auth-utils": "^0.3.3"
 	}
 }
