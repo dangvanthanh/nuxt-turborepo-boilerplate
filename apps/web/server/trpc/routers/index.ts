@@ -1,11 +1,11 @@
 import { router } from '../trpc'
 
-import { github } from './github'
 import { hello } from './hello'
+import { repository } from './repository'
 
 export const appRouter = router({
 	hello,
-	github,
+	repository,
 })
 
 export type AppRouter = typeof appRouter

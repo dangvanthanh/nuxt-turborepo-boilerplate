@@ -2,7 +2,7 @@ import request, { gql } from 'graphql-request'
 import { z } from 'zod'
 import { publicProcedure } from '../trpc'
 
-type BaseRepository = {
+export type BaseRepository = {
 	id: string
 	name: string
 	description: string
@@ -15,11 +15,11 @@ type BaseRepository = {
 	stargazerCount: number
 }
 
-type Repository = {
+export type Repository = {
 	repository: BaseRepository
 }
 
-export const github = publicProcedure
+export const repository = publicProcedure
 	.input(z.object({ authToken: z.string().nullish() }))
 	.query(async ({ input }) => {
 		const endpoint = 'https://api.github.com/graphql'
@@ -43,9 +43,14 @@ export const github = publicProcedure
         }
       }
     `
-		const data = (await request(endpoint, query, requestHeaders)) as Repository
+		const data = (await request(
+			endpoint,
+			query,
+			{},
+			requestHeaders,
+		)) as Repository
 
 		return {
-			repository: data?.repository,
+			repository: data.repository,
 		}
 	})
