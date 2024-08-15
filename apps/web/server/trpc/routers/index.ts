@@ -1,6 +1,6 @@
 import { router } from '../trpc'
 
-import { github } from './git'
+import { github } from './github'
 import { hello } from './hello'
 
 export const appRouter = router({

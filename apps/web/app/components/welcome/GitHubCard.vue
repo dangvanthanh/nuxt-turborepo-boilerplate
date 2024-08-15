@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { $client } = useNuxtApp()
+const { $trpcClient } = useNuxtApp()
 const config = useRuntimeConfig()
 const authToken = config.public.githubToken
 
-const { data: repository } = await $client.github.useQuery({ authToken })
+const { data: repository } = await $trpcClient.github.useQuery({ authToken })
 </script>
 
 <template>

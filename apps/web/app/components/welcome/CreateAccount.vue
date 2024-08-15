@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const { $client } = useNuxtApp()
+const { $trpcClient } = useNuxtApp()
 
-const { data: hello } = await $client.hello.useQuery({
+const { data: hello } = await $trpcClient.hello.useQuery({
 	text: 'Create an account',
 })
 </script>
