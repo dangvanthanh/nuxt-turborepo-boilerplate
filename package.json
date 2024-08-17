@@ -1,32 +1,25 @@
 {
-  "name": "nuxt-turborepo-boilerplate",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "turbo format",
-    "prepare": "git config core.hooksPath .hooks"
-  },
-  "devDependencies": {
-    "@repo/biome-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "lint-staged": "^15.2.7",
-    "turbo": "^2.0.12"
-  },
-  "packageManager": "bun@1.1.12",
-  "engines": {
-    "node": ">=18"
-  },
-  "workspaces": [
-    "apps/*",
-    "layers/*",
-    "packages/*"
-  ],
-  "lint-staged": {
-    "*.{js,ts,vue}": [
-      "bun run lint",
-      "bun run format"
-    ]
-  }
+	"name": "nuxt-turborepo-boilerplate",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"format": "turbo format",
+		"prepare": "git config core.hooksPath .hooks"
+	},
+	"devDependencies": {
+		"@repo/biome-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"lint-staged": "^15.2.7",
+		"turbo": "^2.0.14"
+	},
+	"packageManager": "bun@1.1.25",
+	"engines": {
+		"node": ">=18"
+	},
+	"workspaces": ["apps/*", "layers/*", "packages/*"],
+	"lint-staged": {
+		"*.{js,ts,vue}": ["bun run lint", "bun run format"]
+	}
 }
