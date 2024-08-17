@@ -1,22 +1,24 @@
 <script setup lang="ts">
 interface Props {
-	name?: string
-	company?: string
+  name?: string
+  company?: string
+  url?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-	name: 'Your Name',
-	company: 'Your Company',
+  name: 'Your Name',
+  company: 'Your Company',
+  url: 'https://github.com/dangvanthanh/nuxt-turborepo-boilerplate',
 })
 
 const tailwindConfig = {
-	theme: {
-		extend: {
-			colors: {
-				primary: '#0065da',
-			},
-		},
-	},
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0065da',
+      },
+    },
+  },
 }
 </script>
 
@@ -30,9 +32,9 @@ const tailwindConfig = {
       <EText>
         Thank you for starting your of {{ props.company }} membership.
       </EText>
-      <EButton class="bg-primary px-4 py-2 font-medium leading-4 text-white text-center rounded-full">
-        Get Started
-      </EButton>
+      <EText>
+        Click this link to <ELink href={props.url}>Get Started</ELink>
+      </EText>
       <EText>
         Best,
       </EText>

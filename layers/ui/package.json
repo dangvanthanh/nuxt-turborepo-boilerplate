@@ -6,6 +6,7 @@
 	"scripts": {
 		"shadcn:init": "bunx shadcn-vue@latest init",
 		"shadcn:add": "bunx shadcn-vue@latest add",
+		"dev": "nuxt dev",
 		"build": "nuxt build",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
@@ -19,15 +20,15 @@
 		"typescript": "^5.5.4"
 	},
 	"dependencies": {
-		"@unovis/ts": "^1.4.3",
-		"@unovis/vue": "^1.4.3",
+		"@unovis/ts": "^1.4.4",
+		"@unovis/vue": "^1.4.4",
 		"@vee-validate/zod": "^4.13.2",
-		"@vueuse/core": "^10.11.1",
+		"@vueuse/core": "^11.0.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"embla-carousel": "^8.1.8",
 		"embla-carousel-vue": "^8.1.8",
-		"lucide-vue-next": "^0.427.0",
+		"lucide-vue-next": "^0.428.0",
 		"radix-vue": "^1.9.4",
 		"tailwind-merge": "^2.5.2",
 		"tailwindcss-animate": "^1.0.7",
