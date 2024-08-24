@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@nuxtjs/tailwindcss": "^6.12.1",
-		"nuxt": "^3.12.4",
+		"nuxt": "^3.13.0",
 		"shadcn-nuxt": "^0.10.4",
 		"typescript": "^5.5.4"
 	},
@@ -23,19 +23,19 @@
 		"@unovis/ts": "^1.4.4",
 		"@unovis/vue": "^1.4.4",
 		"@vee-validate/zod": "^4.13.2",
-		"@vueuse/core": "^11.0.0",
+		"@vueuse/core": "^11.0.1",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
-		"embla-carousel": "^8.1.8",
-		"embla-carousel-vue": "^8.1.8",
-		"lucide-vue-next": "^0.428.0",
+		"embla-carousel": "^8.2.0",
+		"embla-carousel-vue": "^8.2.0",
+		"lucide-vue-next": "^0.435.0",
 		"radix-vue": "^1.9.4",
 		"tailwind-merge": "^2.5.2",
 		"tailwindcss-animate": "^1.0.7",
 		"v-calendar": "^3.1.2",
 		"vaul-vue": "^0.2.0",
 		"vee-validate": "^4.13.2",
-		"vue-sonner": "^1.1.4",
+		"vue-sonner": "^1.1.5",
 		"zod": "^3.23.8"
 	}
 }

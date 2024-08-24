@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@repo/ui": "workspace:*",
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.12.4",
+		"nuxt": "^3.13.0",
 		"typescript": "^5.5.4"
 	},
 	"dependencies": {

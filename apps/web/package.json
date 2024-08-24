@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.12.4",
+		"nuxt": "^3.13.0",
 		"nuxt-auth-utils": "^0.3.4"
 	}
 }
