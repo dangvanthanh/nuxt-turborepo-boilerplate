@@ -11,10 +11,10 @@
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
-		"lint-staged": "^15.2.7",
-		"turbo": "^2.1.0"
+		"lint-staged": "^15.2.10",
+		"turbo": "^2.1.1"
 	},
-	"packageManager": "bun@1.1.25",
+	"packageManager": "bun@1.1.26",
 	"engines": {
 		"node": ">=18"
 	},
