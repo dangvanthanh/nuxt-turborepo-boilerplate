@@ -13,7 +13,7 @@
 		"update": "bunx npm-check-updates -ui"
 	},
 	"dependencies": {
-		"@nuxtjs/color-mode": "^3.4.4",
+		"@nuxtjs/color-mode": "^3.5.1",
 		"@repo/emails": "workspace:*",
 		"@repo/ui": "workspace:*",
 		"@trpc/client": "^10.45.2",
@@ -21,13 +21,13 @@
 		"graphql": "^16.9.0",
 		"graphql-request": "^7.1.0",
 		"trpc-nuxt": "^0.10.22",
-		"vue": "^3.4.38",
-		"vue-router": "^4.4.3",
+		"vue": "^3.5.6",
+		"vue-router": "^4.4.5",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
-		"nuxt": "^3.13.0",
-		"nuxt-auth-utils": "^0.3.5"
+		"nuxt": "^3.13.2",
+		"nuxt-auth-utils": "^0.3.8"
 	}
 }
