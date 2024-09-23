@@ -21,13 +21,13 @@
 		"graphql": "^16.9.0",
 		"graphql-request": "^7.1.0",
 		"trpc-nuxt": "^0.10.22",
-		"vue": "^3.5.6",
+		"vue": "^3.5.8",
 		"vue-router": "^4.4.5",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@repo/biome-config": "workspace:*",
 		"nuxt": "^3.13.2",
-		"nuxt-auth-utils": "^0.3.8"
+		"nuxt-auth-utils": "^0.3.9"
 	}
 }
