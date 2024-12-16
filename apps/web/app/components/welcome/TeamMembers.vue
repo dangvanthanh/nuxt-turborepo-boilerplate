@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const sofiaRole = ref('Owner')
 const jacksonRole = ref('Member')
+const roles = ref([
+	{ name: 'Viewer', description: 'Can view and comment.' },
+	{ name: 'Developer', description: 'Can view, comment and edit.' },
+	{ name: 'Billing', description: 'Can view, comment and manage billing.' },
+	{ name: 'Owner', description: 'Admin-level access to all resources.' },
+])
 </script>
 
 <template>
@@ -45,28 +51,10 @@ const jacksonRole = ref('Member')
               <UiCommandList>
                 <UiCommandEmpty>No roles found.</UiCommandEmpty>
                 <UiCommandGroup>
-                  <UiCommandItem value="Viewer" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Viewer</p>
+                  <UiCommandItem v-for="role in roles" :value="role.name" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
+                    <p>{{role.name}}</p>
                     <p class="text-sm text-muted-foreground">
-                      Can view and comment.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Developer" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Developer</p>
-                    <p class="text-sm text-muted-foreground">
-                      Can view, comment and edit.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Billing" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Billing</p>
-                    <p class="text-sm text-muted-foreground">
-                      Can view, comment and manage billing.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Owner" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Owner</p>
-                    <p class="text-sm text-muted-foreground">
-                      Admin-level access to all resources.
+                      {{ role.description }}
                     </p>
                   </UiCommandItem>
                 </UiCommandGroup>
@@ -108,28 +96,10 @@ const jacksonRole = ref('Member')
               <UiCommandList>
                 <UiCommandEmpty>No roles found.</UiCommandEmpty>
                 <UiCommandGroup>
-                  <UiCommandItem value="Viewer" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Viewer</p>
+                  <UiCommandItem v-for="role in roles" :value="role.name" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
+                    <p>{{role.name}}</p>
                     <p class="text-sm text-muted-foreground">
-                      Can view and comment.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Developer" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Developer</p>
-                    <p class="text-sm text-muted-foreground">
-                      Can view, comment and edit.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Billing" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Billing</p>
-                    <p class="text-sm text-muted-foreground">
-                      Can view, comment and manage billing.
-                    </p>
-                  </UiCommandItem>
-                  <UiCommandItem value="Owner" class="teamaspace-y-1 flex flex-col items-start px-4 py-2">
-                    <p>Owner</p>
-                    <p class="text-sm text-muted-foreground">
-                      Admin-level access to all resources.
+                      {{ role.description }}
                     </p>
                   </UiCommandItem>
                 </UiCommandGroup>

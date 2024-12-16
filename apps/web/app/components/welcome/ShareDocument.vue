@@ -1,5 +1,33 @@
 <script setup lang="ts">
 const link = ref('https://www.paga-ui.com')
+const users = ref([
+  {
+    avatar: '/avatars/03.png',
+    avatarFallback: 'OM',
+    name: 'Olivia Martin',
+    email: 'm@example.com',
+    permission: 'edit',
+  },
+  {
+    avatar: '/avatars/05.png',
+    avatarFallback: 'IN',
+    name: 'Isabella Nguyen',
+    email: 'b@example.com',
+    permission: 'view',
+  },
+  {
+    avatar: '/avatars/01.png',
+    avatarFallback: 'SD',
+    name: 'Sofia Davis',
+    email: 'p@example.com',
+    permission: 'view',
+  },
+])
+
+const permissions = ref([
+  { value: 'edit', text: 'Can edit' },
+  { value: 'view', text: 'Can view' },
+])
 </script>
 
 <template>
@@ -23,89 +51,28 @@ const link = ref('https://www.paga-ui.com')
           People with access
         </h4>
         <div class="grid gap-6">
-          <div class="flex items-center justify-between space-x-4">
+          <div v-for="user in users" class="flex items-center justify-between space-x-4">
             <div class="flex items-center space-x-4">
               <UiAvatar>
-                <UiAvatarImage src="/avatars/03.png" />
-                <UiAvatarFallback>OM</UiAvatarFallback>
+                <UiAvatarImage :src="user.avatar" />
+                <UiAvatarFallback>{{ user.avatarFallback }}</UiAvatarFallback>
               </UiAvatar>
               <div>
                 <p class="text-sm font-medium leading-none">
-                  Olivia Martin
+                  {{ user.name }}
                 </p>
                 <p class="text-sm text-muted-foreground">
-                  m@example.com
+                  {{ user.email }}
                 </p>
               </div>
             </div>
-            <UiSelect default-value="edit">
+            <UiSelect :default-value="user.permission">
               <UiSelectTrigger class="ml-auto w-[110px]">
                 <UiSelectValue placeholder="Select" />
               </UiSelectTrigger>
               <UiSelectContent>
-                <UiSelectItem value="edit">
-                  Can edit
-                </UiSelectItem>
-                <UiSelectItem value="view">
-                  Can view
-                </UiSelectItem>
-              </UiSelectContent>
-            </UiSelect>
-          </div>
-          <div class="flex items-center justify-between space-x-4">
-            <div class="flex items-center space-x-4">
-              <UiAvatar>
-                <UiAvatarImage src="/avatars/05.png" />
-                <UiAvatarFallback>IN</UiAvatarFallback>
-              </UiAvatar>
-              <div>
-                <p class="text-sm font-medium leading-none">
-                  Isabella Nguyen
-                </p>
-                <p class="text-sm text-muted-foreground">
-                  b@example.com
-                </p>
-              </div>
-            </div>
-            <UiSelect default-value="view">
-              <UiSelectTrigger class="ml-auto w-[110px]">
-                <UiSelectValue placeholder="Select" />
-              </UiSelectTrigger>
-              <UiSelectContent>
-                <UiSelectItem value="edit">
-                  Can edit
-                </UiSelectItem>
-                <UiSelectItem value="view">
-                  Can view
-                </UiSelectItem>
-              </UiSelectContent>
-            </UiSelect>
-          </div>
-          <div class="flex items-center justify-between space-x-4">
-            <div class="flex items-center space-x-4">
-              <UiAvatar>
-                <UiAvatarImage src="/avatars/01.png" />
-                <UiAvatarFallback>SD</UiAvatarFallback>
-              </UiAvatar>
-              <div>
-                <p class="text-sm font-medium leading-none">
-                  Sofia Davis
-                </p>
-                <p class="text-sm text-muted-foreground">
-                  p@example.com
-                </p>
-              </div>
-            </div>
-            <UiSelect default-value="view">
-              <UiSelectTrigger class="ml-auto w-[110px]">
-                <UiSelectValue placeholder="Select" />
-              </UiSelectTrigger>
-              <UiSelectContent>
-                <UiSelectItem value="edit">
-                  Can edit
-                </UiSelectItem>
-                <UiSelectItem value="view">
-                  Can view
+                <UiSelectItem v-for="permission in permissions" :value="permission.value">
+                  {{ permission.text }}
                 </UiSelectItem>
               </UiSelectContent>
             </UiSelect>
