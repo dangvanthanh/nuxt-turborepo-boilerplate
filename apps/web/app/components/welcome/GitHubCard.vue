@@ -8,18 +8,18 @@ const authToken = config.public.githubToken
 const repo = ref<Repository | null>()
 
 onMounted(() => {
-  getRepository()
+	getRepository()
 })
 
 async function getRepository() {
-  try {
-    const { data: repository } = await $trpcClient.repository.useQuery({
-      authToken,
-    })
-    repo.value = repository.value
-  } catch {
-    repo.value = null
-  }
+	try {
+		const { data: repository } = await $trpcClient.repository.useQuery({
+			authToken,
+		})
+		repo.value = repository.value
+	} catch {
+		repo.value = null
+	}
 }
 </script>
 

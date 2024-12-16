@@ -1,32 +1,32 @@
 <script setup lang="ts">
 const link = ref('https://www.paga-ui.com')
 const users = ref([
-  {
-    avatar: '/avatars/03.png',
-    avatarFallback: 'OM',
-    name: 'Olivia Martin',
-    email: 'm@example.com',
-    permission: 'edit',
-  },
-  {
-    avatar: '/avatars/05.png',
-    avatarFallback: 'IN',
-    name: 'Isabella Nguyen',
-    email: 'b@example.com',
-    permission: 'view',
-  },
-  {
-    avatar: '/avatars/01.png',
-    avatarFallback: 'SD',
-    name: 'Sofia Davis',
-    email: 'p@example.com',
-    permission: 'view',
-  },
+	{
+		avatar: '/avatars/03.png',
+		avatarFallback: 'OM',
+		name: 'Olivia Martin',
+		email: 'm@example.com',
+		permission: 'edit',
+	},
+	{
+		avatar: '/avatars/05.png',
+		avatarFallback: 'IN',
+		name: 'Isabella Nguyen',
+		email: 'b@example.com',
+		permission: 'view',
+	},
+	{
+		avatar: '/avatars/01.png',
+		avatarFallback: 'SD',
+		name: 'Sofia Davis',
+		email: 'p@example.com',
+		permission: 'view',
+	},
 ])
 
 const permissions = ref([
-  { value: 'edit', text: 'Can edit' },
-  { value: 'view', text: 'Can view' },
+	{ value: 'edit', text: 'Can edit' },
+	{ value: 'view', text: 'Can view' },
 ])
 </script>
 
