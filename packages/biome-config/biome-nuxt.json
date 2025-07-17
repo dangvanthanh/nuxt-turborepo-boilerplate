@@ -1,5 +1,6 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"root": false,
+	"$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
@@ -7,20 +8,25 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": [
-			"./.nuxt/**",
-			"./.output/**",
-			"./.turbo/**",
-			"./.playground",
-			"./dist/**"
+		"includes": [
+			"**",
+			"!**/.nuxt/**",
+			"!**/.output/**",
+			"!**/.turbo/**",
+			"!**/.playground",
+			"!**/dist/**"
 		]
 	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab"
 	},
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	},
 	"linter": {
 		"enabled": true,
@@ -33,5 +39,27 @@
 			"quoteStyle": "single",
 			"semicolons": "asNeeded"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": [
+				"**/*.svelte",
+				"**/*.astro",
+				"**/*.vue"
+			],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					},
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off",
+						"useHookAtTopLevel": "off"
+					}
+				}
+			}
+		}
+	]
 }
